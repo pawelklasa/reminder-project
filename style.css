@@ -7,7 +7,7 @@ body {
 
 .container {
   display: grid;
-  grid-auto-columns: 1fr; 
+  grid-auto-columns: 0.5fr, 1fr, 0.5fr; 
   grid-auto-rows: 1fr, 100px; 
   margin-top: 30px;
   grid-template-areas:
@@ -109,6 +109,11 @@ p {
   font-size: 12px;
   font-style: italic;
   color: #919191;
+}
+
+.add {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
