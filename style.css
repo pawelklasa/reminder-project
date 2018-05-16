@@ -74,7 +74,7 @@ p {
 
 .item-holder {
   margin: 0px;
-  display: none;
+  /* display: none; */
 }
 
 .close {
