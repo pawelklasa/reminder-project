@@ -123,6 +123,15 @@ p {
   cursor: pointer;
 }
 
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
 @media screen and (max-width: 600px) {
   .container {
     display: grid;
@@ -137,6 +146,15 @@ p {
     margin-right: 20px;
     margin-left: 20px;
   }
+
+  /* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
 }
 
 @media (max-width: 1200px) and (min-width: 600px) {
@@ -153,6 +171,15 @@ p {
     margin-right: 100px;
     margin-left: 100px;
   }
+
+  /* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
 }
 
 /* The Modal (background) */
@@ -170,14 +197,7 @@ p {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
+
 
 /* The Close Button */
 .close-modal {
