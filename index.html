@@ -14,13 +14,46 @@
 
     <div class="card">
 
-      <h3 class="main-title">Reminder Buddy</h3>
+      <h3 class="main-title"><i class="far fa-bell"></i> Reminder Buddy</h3>
 
+      <div class="add"><i class="fas fa-plus-square fa-4x" id="myBtn" style="color: rgb(72, 194, 72)"></i></div>
+
+      <!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <p>Title:</p>
+    <input class="input" type="text" name="firstname" value="">
+    <br>
+    <p>Date:</p>
+    <input class="input" type="date" name="firstname" value="">
+    <br>
+    <p>Priority:</p>
+    <select>
+        <option>P1</option>
+        <option>P2</option>
+        <option>P3</option>
+    </select>
+    <br>
+    <p>Reminder:</p>
+    <input class="input" type="text" name="lastname" value="">
+    <br><br>
+    <input class="btn" type="submit" value="Add Reminder">
+  </form> 
+  </div>
+
+</div>
+ 
       <div class="item-holder">
         <div class="item card-item">
           <h4>Title goes here</h4>
-          <i class="far fa-times-circle fa-lg close"></i>
-          <i class="far fa-edit fa-lg edit"></i>
+          <i class="far fa-times-circle fa-sm close"></i>
+          <i class="far fa-edit fa-sm edit"></i>
+          <i class="far fa-flag fa-sm priority" style="color:Tomato"></i>
           <p class="no-p-margin date">24/06/2018</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
             eiusmod tempor incididunt.</p>
@@ -30,8 +63,9 @@
       <div class="item-holder">
           <div class="item card-item">
             <h4>Title goes here</h4>
-            <i class="far fa-times-circle fa-lg close"></i>
-            <i class="far fa-edit fa-lg edit"></i>
+            <i class="far fa-times-circle fa-sm close"></i>
+            <i class="far fa-edit fa-sm edit"></i>
+            <i class="far fa-flag fa-sm priority" style="color:rgb(15, 107, 3)"></i>
             <p class="no-p-margin date">24/06/2018</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
               eiusmod tempor incididunt.</p>
@@ -41,29 +75,14 @@
         <div class="item-holder">
             <div class="item card-item">
               <h4>Title goes here</h4>
-              <i class="far fa-times-circle fa-lg close"></i>
-              <i class="far fa-edit fa-lg edit"></i>
+              <i class="far fa-times-circle fa-sm close"></i>
+              <i class="far fa-edit fa-sm edit"></i>
+              <i class="far fa-flag fa-sm priority" style="color:Orange"></i>
               <p class="no-p-margin date">24/06/2018</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                 eiusmod tempor incididunt.</p>
             </div>
-          </div>
-
-      <hr>
-      <h3>Add your reminder below:</h3>
-      
-      <form action="#">
-        <p>Title:</p>
-        <input class="input" type="text" name="firstname" value="">
-        <br>
-        <p>Date:</p>
-        <input class="input" type="date" name="firstname" value="">
-        <br>
-        <p>Remind:</p>
-        <input class="input" type="text" name="lastname" value="">
-        <br><br>
-        <input class="btn" type="submit" value="Add Reminder">
-      </form> 
+          </div> 
       
     </div>
     <div class="brand"><p class="no-p-margin"><i class="fab fa-github"></i> pav_ka</p></div>
