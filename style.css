@@ -8,7 +8,7 @@ body {
 .container {
   display: grid;
   grid-auto-columns: 1fr; 
-  grid-auto-rows: 1fr; 
+  grid-auto-rows: 1fr, 100px; 
   margin-top: 30px;
   grid-template-areas:
     'columm card column'
@@ -88,6 +88,11 @@ p {
 }
 
 .edit {
+  float: right;
+  margin-left: 10px;
+}
+
+.priority {
   float: right;
 }
 
