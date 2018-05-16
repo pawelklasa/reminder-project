@@ -53,10 +53,9 @@ body {
   box-sizing: border-box;         /* Opera/IE 8+ */
   /* background-color: #3CBC8D;  */
 }
-
-h3 {
-  margin-top: 0px;
-}
+ h4 {
+  display: inline;
+ }
 
 p {
   margin-bottom: 5px;
@@ -71,6 +70,29 @@ p {
 
 .no-p-margin {
   margin: 0px;
+}
+
+.item-holder {
+  margin: 0px;
+  /* display: none; */
+}
+
+.close {
+  float: right;
+  margin-left: 10px;
+}
+
+.edit {
+  float: right;
+}
+
+.card-item {
+  padding: 20px;
+  grid-area: card;
+  border-radius: 6px;
+  /* border: 1px solid #ddd; */
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 @media screen and (max-width: 600px) {
