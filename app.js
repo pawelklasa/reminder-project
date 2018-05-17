@@ -23,3 +23,16 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// Reminder constructor
+function Person(firstName, secondName) {
+    this.firstName = firstName;
+    this.secondName = secondName;
+  }
+
+  const firstName = document.getElementById('title').value,
+        secondName = document.getElementById('date').value;
+
+  const person = new Person(firstName, secondName);
+
+  console.log(person);
