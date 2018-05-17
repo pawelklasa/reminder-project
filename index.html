@@ -25,7 +25,9 @@
 
   <!-- Modal content -->
   <div class="modal-content card">
+  <form action="submit" id="form"></form>
     <span class="close-modal">&times;</span>
+    
     <p>Title:</p>
     <input class="input" type="text" name="firstname" id="title" value="">
     <br>
@@ -42,7 +44,7 @@
     <p>Reminder:</p>
     <input class="input" type="text" name="lastname" value="">
     <br><br>
-    <input class="btn" type="submit" value="Add Reminder">
+    <input class="btn" onclick="form_submit()" type="submit" value="Add Reminder">
   </form> 
   </div>
 

@@ -25,14 +25,21 @@ window.onclick = function(event) {
 }
 
 // Reminder constructor
-function Person(firstName, secondName) {
-    this.firstName = firstName;
-    this.secondName = secondName;
-  }
 
-  const firstName = document.getElementById('title').value,
-        secondName = document.getElementById('date').value;
+// function Person(firstName, secondName) {
+//     this.firstName = firstName;
+//     this.secondName = secondName;
+//   }
 
-  const person = new Person(firstName, secondName);
+//   const firstName = document.getElementById('title').value,
+//         secondName = document.getElementById('date').value;
 
-  console.log(person);
+//   const person = new Person(firstName, secondName);
+
+//   function form_submit() {
+//     document.getElementById("form").submit();
+//     localStorage.value=("Pav");
+//     return false;
+//    } 
+
+//   console.log(person);
