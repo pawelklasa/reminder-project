@@ -24,6 +24,8 @@ window.onclick = function(event) {
     }
 }
 
+
+
 // Reminder constructor
 function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
   this.reminderTitle = reminderTitle;
@@ -41,6 +43,10 @@ document.getElementById('btn').addEventListener('click', function(e) {
   // Create a Reminder
   const newReminder = new Reminder(reminderTitle, reminderDate, reminderPriority, reminderText);
 
+  // Remove modal
+  modal.style.display = "none";
+
   e.preventDefault();
+  
   console.log(newReminder);
 });
