@@ -47,7 +47,6 @@ document.getElementById('btn').addEventListener('click', function(e) {
   // Make item appear
   itemHolder.style.display = "block";
 
-
   e.preventDefault();
 
   console.log(newReminder);
