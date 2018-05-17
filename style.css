@@ -29,7 +29,7 @@ body {
   font-size: 16px;
   height: 45px;
   width: 100%;
-  background-color: #6666ff;
+  background-color: #43d29e;
   border-radius: 4px;
   color: #fff;
   border-top-color: rgb(255, 255, 255);
@@ -53,12 +53,19 @@ body {
   box-sizing: border-box;         /* Opera/IE 8+ */
   /* background-color: #3CBC8D;  */
 }
+
+h1 {
+  color: #4a4f62;
+}
+
  h4 {
   display: inline;
+  color: #4a4f62;
  }
 
 p {
   margin-bottom: 5px;
+  color: #4a4f62;
 }
 
 .brand {
@@ -80,6 +87,7 @@ p {
 .main-title {
   margin-top: 0px;
   text-align: center;
+  color: #4a4f62;
 }
 
 .close {
@@ -101,7 +109,7 @@ p {
   grid-area: card;
   border-radius: 6px;
   /* border: 1px solid #ddd; */
-  background-color: #fafafa;
+  background-color: #f6faff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -115,7 +123,7 @@ hr {
 .date {
   font-size: 12px;
   font-style: italic;
-  color: #919191;
+  color: #aec0d3;
 }
 
 .add {
@@ -123,13 +131,13 @@ hr {
   text-align: center;
 }
 .fa-plus-square {
-  color: rgb(47, 235, 78);
+  color: #209bff;
 }
 
 
 .fa-plus-square:hover,
 .fa-plus-square:focus {
-  color: rgb(10, 200, 10);
+  color: #3fb1ff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -185,10 +193,7 @@ hr {
 
   /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
   width: 50%;
 }
 }
