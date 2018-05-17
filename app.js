@@ -24,8 +24,6 @@ window.onclick = function(event) {
     }
 }
 
-
-
 // Reminder constructor
 function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
   this.reminderTitle = reminderTitle;
@@ -39,14 +37,18 @@ document.getElementById('btn').addEventListener('click', function(e) {
         reminderDate = document.getElementById('date').value,
         reminderPriority = document.getElementById('priority').value,
         reminderText = document.getElementById('text').value;
+  const itemHolder = document.getElementById('item-holder');
         
   // Create a Reminder
   const newReminder = new Reminder(reminderTitle, reminderDate, reminderPriority, reminderText);
-
+  
   // Remove modal
   modal.style.display = "none";
+  // Make item appear
+  itemHolder.style.display = "block";
+
 
   e.preventDefault();
-  
+
   console.log(newReminder);
 });
