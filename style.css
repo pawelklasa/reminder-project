@@ -101,8 +101,15 @@ p {
   grid-area: card;
   border-radius: 6px;
   /* border: 1px solid #ddd; */
-  background-color: #fff;
+  background-color: #fafafa;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+hr {
+  height: 2px;;
+  background-color: #fff;
+  border: none;
+  color: #fff;
 }
 
 .date {
@@ -115,10 +122,14 @@ p {
   margin-bottom: 20px;
   text-align: center;
 }
+.fa-plus-square {
+  color: rgb(47, 235, 78);
+}
+
 
 .fa-plus-square:hover,
 .fa-plus-square:focus {
-  color: rgb(1, 92, 1);
+  color: rgb(10, 200, 10);
   text-decoration: none;
   cursor: pointer;
 }
