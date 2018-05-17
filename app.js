@@ -23,3 +23,30 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+
+// Reminder constructor
+function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
+  this.reminderTitle = reminderTitle;
+  this.reminderDate = reminderDate;
+  this.reminderPriority = reminderPriority;
+  this.reminderText = reminderText;
+}
+
+document.getElementById('btn').addEventListener('click', function(e) {
+  const reminderTitle = document.getElementById('title').value,
+        reminderDate = document.getElementById('date').value,
+        reminderPriority = document.getElementById('priority').value,
+        reminderText = document.getElementById('text').value;
+        
+  // Create a Reminder
+  const newReminder = new Reminder(reminderTitle, reminderDate, reminderPriority, reminderText);
+
+  // Remove modal
+  modal.style.display = "none";
+
+  e.preventDefault();
+  
+  console.log(newReminder);
+});

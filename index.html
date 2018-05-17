@@ -25,24 +25,26 @@
 
   <!-- Modal content -->
   <div class="modal-content card">
+  <form action="" id="form"></form>
     <span class="close-modal">&times;</span>
+    
     <p>Title:</p>
-    <input class="input" type="text" name="firstname" value="">
+    <input class="input" type="text" name="firstname" id="title" value="">
     <br>
     <p>Date:</p>
-    <input class="input" type="date" name="firstname" value="">
+    <input class="input" type="date" name="firstname" id="date" value="">
     <br>
     <p>Priority:</p>
-    <select>
+    <select id="priority">
         <option>P1</option>
         <option>P2</option>
         <option>P3</option>
     </select>
     <br>
     <p>Reminder:</p>
-    <input class="input" type="text" name="lastname" value="">
+    <input class="input" type="text" name="lastname" id="text" value="">
     <br><br>
-    <input class="btn" type="submit" value="Add Reminder">
+    <input class="btn" id="btn" type="submit" value="Add Reminder">
   </form> 
   </div>
 
