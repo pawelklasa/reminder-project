@@ -25,21 +25,22 @@ window.onclick = function(event) {
 }
 
 // Reminder constructor
+function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
+  this.reminderTitle = reminderTitle;
+  this.reminderDate = reminderDate;
+  this.reminderPriority = reminderPriority;
+  this.reminderText = reminderText;
+}
 
-// function Person(firstName, secondName) {
-//     this.firstName = firstName;
-//     this.secondName = secondName;
-//   }
+document.getElementById('btn').addEventListener('click', function(e) {
+  const reminderTitle = document.getElementById('title').value,
+        reminderDate = document.getElementById('date').value,
+        reminderPriority = document.getElementById('priority').value,
+        reminderText = document.getElementById('text').value;
+        
+  // Create a Reminder
+  const newReminder = new Reminder(reminderTitle, reminderDate, reminderPriority, reminderText);
 
-//   const firstName = document.getElementById('title').value,
-//         secondName = document.getElementById('date').value;
-
-//   const person = new Person(firstName, secondName);
-
-//   function form_submit() {
-//     document.getElementById("form").submit();
-//     localStorage.value=("Pav");
-//     return false;
-//    } 
-
-//   console.log(person);
+  e.preventDefault();
+  console.log(newReminder);
+});
