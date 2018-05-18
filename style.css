@@ -80,6 +80,10 @@ p {
   margin-right: 10px;
 }
 
+.fa-github {
+  color: #fff;
+}
+
 .fa-twitter {
   margin-top: 10px;
 }
@@ -90,7 +94,7 @@ p {
 
 .item-holder {
   margin: 0px 0px 20px 0px;
-  display: none;
+  
 }
 
 .main-title {
@@ -117,6 +121,7 @@ p {
 }
 
 .card-item {
+  margin-top: 10px;
   padding: 20px;
   grid-area: card;
   border-radius: 6px;
@@ -164,6 +169,10 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    background: #fafafa;
+  }
+
   .container {
     display: grid;
     grid-auto-columns: 1fr; 
@@ -172,6 +181,10 @@ hr {
     grid-template-areas:
       'card'
       'card2';  
+  }
+
+  .fa-github {
+    color: #4a4f62;
   }
 
   .card {
