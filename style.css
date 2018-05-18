@@ -164,18 +164,23 @@ hr {
       'card'
       'card2';  
   }
+
   .card {
-    display: none;
+    padding: 0px;
+    grid-area: card;
+    /* border: 1px solid #ddd; */
+    background-color: #fafafa;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.12), 0 0px 0px rgba(0,0,0,0.24);
   }
 
   /* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 600px) {
