@@ -217,7 +217,7 @@ hr {
   }
 }
 
-@media (max-width: 1200px) and (min-width: 600px) {
+@media (max-width: 1000px) and (min-width: 600px) {
   .container {
     display: grid;
     grid-auto-columns: 1fr; 
