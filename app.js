@@ -38,7 +38,7 @@ document.getElementById('btn').addEventListener('click', function(e) {
         reminderPriority = document.getElementById('priority').value,
         reminderText = document.getElementById('text').value;
 
-  // Item holder
+  // Getting all elements in item-holder
   const itemHolder = document.getElementById('item-holder'),
         itemCard = document.createElement('div'),
         title = document.createElement('h4'),
@@ -48,7 +48,7 @@ document.getElementById('btn').addEventListener('click', function(e) {
         edit = document.createElement('i'),
         priority = document.createElement('i');
 
-  // Actions
+  // Creating each item in a card
   itemHolder.appendChild(itemCard);
   itemCard.className = 'item card-item';
 
