@@ -57,6 +57,7 @@ document.getElementById('btn').addEventListener('click', function(e) {
 
   itemCard.appendChild(close);
   close.className = 'far fa-times-circle fa-sm close';
+  close.id = "close";
 
   itemCard.appendChild(edit);
   edit.className = 'far fa-edit fa-sm edit';
@@ -81,7 +82,13 @@ document.getElementById('btn').addEventListener('click', function(e) {
   if (reminderPriority === 'P3') {
     priority.style = 'color: #fccc98'
   }
-       
+
+  // Close
+  document.getElementById('close').addEventListener('click', function() {
+    itemHolder.removeChild(itemCard);
+    console.log('clicked');
+  });
+
   // Remove modal
   modal.style.display = "none";
   // Make item appear
@@ -89,5 +96,6 @@ document.getElementById('btn').addEventListener('click', function(e) {
 
   e.preventDefault();
 
-  console.log(newReminder);
 });
+
+
