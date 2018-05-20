@@ -62,7 +62,7 @@ document.getElementById('btn').addEventListener('click', function(e) {
   edit.className = 'far fa-edit fa-sm edit';
 
   itemCard.appendChild(priority);
-  priority.className = 'far fa-flag fa-sm priority';
+  priority.className = 'fas fa-flag fa-sm priority';
 
   itemCard.appendChild(date);
   date.className = 'no-p-margin date';
@@ -70,6 +70,16 @@ document.getElementById('btn').addEventListener('click', function(e) {
 
   itemCard.appendChild(text);
   text.innerHTML = reminderText;
+
+  if (reminderPriority === 'P1') {
+  priority.style = 'color: #e6496b';
+  }; 
+  if (reminderPriority === 'P2') {
+    priority.style = 'color: #f46c22'
+  };
+  if (reminderPriority === 'P3') {
+    priority.style = 'color: #fccc98'
+  };
        
   // Remove modal
   modal.style.display = "none";
