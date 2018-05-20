@@ -71,15 +71,16 @@ document.getElementById('btn').addEventListener('click', function(e) {
   itemCard.appendChild(text);
   text.innerHTML = reminderText;
 
+  // Priority colour change
   if (reminderPriority === 'P1') {
   priority.style = 'color: #e6496b';
-  }; 
+  }
   if (reminderPriority === 'P2') {
     priority.style = 'color: #f46c22'
-  };
+  }
   if (reminderPriority === 'P3') {
     priority.style = 'color: #fccc98'
-  };
+  }
        
   // Remove modal
   modal.style.display = "none";
