@@ -92,8 +92,6 @@ document.getElementById('btn').addEventListener('click', function(e) {
 
   // Remove modal
   modal.style.display = "none";
-  // Make item appear
-  // itemHolder.style.display = "block";
 
   e.preventDefault();
 
