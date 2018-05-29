@@ -59,7 +59,6 @@ document.getElementById('btn').addEventListener('click', function(e) {
   close.className = 'far fa-times-circle fa-sm close';
   
   // Close
-  
   close.addEventListener('click', function(event) {
     debugger;
     event.target.parentElement.remove();
