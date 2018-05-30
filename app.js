@@ -1,28 +1,12 @@
-// Get the modal
-var modal = document.getElementById('myModal');
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.datepicker');
+  var instances = M.Datepicker.init(elems, );
+});
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-modal")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-}
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('select');
+  var instances = M.FormSelect.init(elems, );
+});
 
 // Reminder constructor
 function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
@@ -33,10 +17,10 @@ function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
 }
 
 document.getElementById('btn').addEventListener('click', function(e) {
-  const reminderTitle = document.getElementById('title').value,
+  const reminderTitle = document.getElementById('textarea1').value,
         reminderDate = document.getElementById('date').value,
         reminderPriority = document.getElementById('priority').value,
-        reminderText = document.getElementById('text').value;
+        reminderText = document.getElementById('textarea2').value;
 
   // Getting all elements in item-holder
   const itemHolder = document.getElementById('item-holder'),
