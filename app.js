@@ -17,10 +17,10 @@ function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
 }
 
 document.getElementById('btn').addEventListener('click', function(e) {
-  const reminderTitle = document.getElementById('textarea1').value,
-        reminderDate = document.getElementById('date').value,
-        reminderPriority = document.getElementById('priority').value,
-        reminderText = document.getElementById('textarea2').value;
+  let reminderTitle = document.getElementById('textarea1').value,
+      reminderDate = document.getElementById('date').value,
+      reminderPriority = document.getElementById('priority').value,
+      reminderText = document.getElementById('textarea2').value;
 
   // Getting all elements in item-holder
   const itemHolder = document.getElementById('item-holder'),
@@ -61,6 +61,11 @@ document.getElementById('btn').addEventListener('click', function(e) {
 
   itemCard.appendChild(text);
   text.innerHTML = reminderText;
+
+  document.getElementById('textarea1').value = '';
+  document.getElementById('date').value = '';
+  document.getElementById('priority').value = '';
+  document.getElementById('textarea2').value = '';
 
   // Priority colour change
   if (reminderPriority === 'P1') {
