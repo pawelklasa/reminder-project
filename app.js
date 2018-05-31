@@ -25,7 +25,7 @@ document.getElementById('btn').addEventListener('click', function(e) {
   // Getting all elements in item-holder
   const itemHolder = document.getElementById('item-holder'),
         itemCard = document.createElement('div'),
-        title = document.createElement('h4'),
+        title = document.createElement('h5'),
         text = document.createElement('p'),
         date = document.createElement('p'),
         close = document.createElement('i'),
