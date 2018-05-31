@@ -22,7 +22,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 700px;
   width: 100%;
   display: grid;
   grid-auto-columns: 0.5fr, 1fr, 0.5fr; 
@@ -34,7 +34,6 @@ body {
 }
 
 .card {
-  margin: 0 auto;
   padding: 20px 20px 0px 20px;
   grid-area: card;
   border-radius: 6px;
