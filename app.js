@@ -44,7 +44,7 @@ document.getElementById('btn').addEventListener('click', function(e) {
   
   // Close
   close.addEventListener('click', function(event) {
-    debugger;
+    // debugger;
     event.target.parentElement.remove();
     console.log('clicked');
   });
@@ -72,9 +72,6 @@ document.getElementById('btn').addEventListener('click', function(e) {
   if (reminderPriority === 'P3') {
     priority.style = 'color: #fccc98'
   }
-
-  // Remove modal
-  modal.style.display = "none";
 
   e.preventDefault();
 
