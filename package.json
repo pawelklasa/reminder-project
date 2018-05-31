@@ -1,0 +1,35 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "this is uni project",
+  "main": "app.js",
+  "dependencies": {
+    "eslint": "^4.19.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawelklasa/reminder-project.git"
+  },
+  "keywords": [
+    "uni",
+    "work",
+    "to",
+    "do",
+    "litl"
+  ],
+  "author": "pawel klasa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pawelklasa/reminder-project/issues"
+  },
+  "homepage": "https://github.com/pawelklasa/reminder-project#readme"
+}
