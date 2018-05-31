@@ -188,7 +188,6 @@ hr {
   .container {
     display: grid;
     grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
     margin-top: 30px;
     grid-template-areas:
       'card'
