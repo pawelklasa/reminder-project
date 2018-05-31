@@ -6,8 +6,11 @@ body {
   background: #7f7fd5; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
+
+.datepicker-date-display {
+  background-color: #7f7fd5;
+  }
 
 .row {
   margin-bottom: 0px; 
@@ -48,7 +51,7 @@ body {
   font-size: 16px;
   height: 45px;
   width: 100%;
-  background-color: #43d29e;
+  background-color: #7f7fd5;
   border-radius: 4px;
   color: #fff;
   border-top-color: rgb(255, 255, 255);
