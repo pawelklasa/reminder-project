@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -14,44 +15,53 @@
 
     <div class="card">
 
-      <h3 class="main-title"><i class="far fa-bell" style="color:#e6496b"></i> Reminder Buddy</h3>
+      <h6 class="main-title"><i class="far fa-bell" style="color:#e6496b"></i> Reminder Buddy</h6>
 
-      <div class="add"><i class="fas fa-plus-square fa-4x" id="myBtn"></i></div>
-
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content card">
         <form action="" id="form"></form>
-          <span class="close-modal">&times;</span>
-          
-          <p>Title:</p>
-          <input class="input" type="text" name="firstname" id="title" value="">
-          <br>
-          <p>Date:</p>
-          <input class="input" type="date" name="firstname" id="date" value="">
-          
-          <br>
-          <p>Priority:</p>
-          <select id="priority">
+
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Reminder title:</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="text" class="datepicker" id="date">
+            <label for="date">Reminder date:</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <select id="priority">
               <option>P1</option>
               <option>P2</option>
               <option>P3</option>
-          </select>
-          <br>
-          <p>Reminder:</p>
-          <input class="input" type="text" name="lastname" id="text" value="">
-          <br><br>
-          <input class="btn" id="btn" type="submit" value="Add Reminder">
-        </form> 
+            </select>
+            <label for="priority">Priority</label>
+          </div>
         </div>
 
-      </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea2" class="materialize-textarea"></textarea>
+            <label for="textarea2">Reminder text:</label>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col s12">
+            <input class="btn" id="btn" type="submit" value="Add a Reminder">
+          </div>
+        </div>
+
+        </form> 
+       
  
       <div class="item-holder" id="item-holder">
         <!-- <div class="item card-item" id="card-item">
-         <h4 id="title"></h4>
+         <h4 id="title">dcsdcdsc</h4>
           <i class="far fa-times-circle fa-sm close" style="color:#209bff"></i>
           <i class="far fa-edit fa-sm edit" style="color:#209bff"></i>
           <i class="far fa-flag fa-sm priority" style="color:#e6496b"></i>
@@ -68,7 +78,7 @@
     </div>
     
   </div>
-
+  <script src="js/materialize.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
