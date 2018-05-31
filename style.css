@@ -10,7 +10,7 @@ body {
 }
 
 .row {
-  margin-bottom: 0px;  
+  margin-bottom: 0px; 
 }
 
 .input-field {
@@ -119,7 +119,7 @@ p {
 
 .main-title {
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
   color: #4a4f62;
 }
