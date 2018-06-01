@@ -84,6 +84,8 @@
 
 // Refactoring for modular js
 
+// IIFE
+
 // (function() {
 //   // Declare private functions and vars
 
