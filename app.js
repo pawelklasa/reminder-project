@@ -84,11 +84,30 @@
 
 // Refactoring for modular js
 
-(function() {
-  // Declare private functions and vars
+// (function() {
+//   // Declare private functions and vars
 
-  return {
-    
-    // Declare public functions and vars
+//   return {
+
+//     // Declare public functions and vars
+//   }
+// })();
+
+const ItemCtrl = (function() {
+  function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
+    this.reminderTitle = reminderTitle;
+    this.reminderDate = reminderDate;
+    this.reminderPriority = reminderPriority;
+    this.reminderText = reminderText;
   }
 })();
+
+
+const UICtrl = (function() {
+  
+})();
+
+
+const App = (function(ItemCtrl, UICtrl) {
+  
+})(ItemCtrl, UICtrl);
