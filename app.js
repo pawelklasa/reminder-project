@@ -113,3 +113,5 @@ const UICtrl = (function() {
 const App = (function(ItemCtrl, UICtrl) {
   
 })(ItemCtrl, UICtrl);
+
+App();
