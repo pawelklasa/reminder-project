@@ -95,6 +95,8 @@
 //   }
 // })();
 
+// MODULE ONE ------
+
 const ItemCtrl = (function() {
   function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
     this.id = id;
@@ -113,7 +115,7 @@ const ItemCtrl = (function() {
     ],
     currentItem: null
   }
-  
+
   // Public methods
   return {
     logData: function(){
@@ -123,6 +125,9 @@ const ItemCtrl = (function() {
 })();
 
 
+// MODULE TWO ------
+
+
 const UICtrl = (function() {
 
   // Public methods
@@ -130,6 +135,9 @@ const UICtrl = (function() {
 
   }
 })();
+
+
+// MODULE THREE ------
 
 
 const App = (function(ItemCtrl, UICtrl) {
