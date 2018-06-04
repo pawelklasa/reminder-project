@@ -97,21 +97,52 @@
 
 const ItemCtrl = (function() {
   function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
+    this.id = id;
     this.reminderTitle = reminderTitle;
     this.reminderDate = reminderDate;
     this.reminderPriority = reminderPriority;
     this.reminderText = reminderText;
   }
+
+  // Data structure / state
+  const data = {
+    items: [
+      {id: 0, reminderTitle: 'This is a reminder title', reminderDate: '24-02-1982', reminderPriority: 'P1', reminderText: 'Some text for reminder.'},
+      {id: 1, reminderTitle: 'This is a reminder title2', reminderDate: '24-02-2017', reminderPriority: 'P2', reminderText: 'Some text for reminder.'},
+      {id: 2, reminderTitle: 'This is a reminder title3', reminderDate: '24-02-2000', reminderPriority: 'P3', reminderText: 'Some text for reminder.'}
+    ],
+    currentItem: null
+  }
+  
+  // Public methods
+  return {
+    logData: function(){
+      return data;
+    }
+  }
 })();
 
 
 const UICtrl = (function() {
-  
+
+  // Public methods
+  return {
+
+  }
 })();
 
 
 const App = (function(ItemCtrl, UICtrl) {
   
+  // Public methods
+  return {
+    init: function() {
+      console.log('Hello');
+    }
+  }
+  
 })(ItemCtrl, UICtrl);
 
-App();
+// Initialize App
+
+App.init();
