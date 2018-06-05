@@ -118,7 +118,10 @@ const ItemCtrl = (function() {
 
   // Public methods
   return {
-    logData: function(){
+    getItems: function() {
+      return data.items;
+    },
+    logData: function() {
       return data;
     }
   }
@@ -132,7 +135,9 @@ const UICtrl = (function() {
 
   // Public methods
   return {
+    populateItemList: function(items) {
 
+    }
   }
 })();
 
@@ -145,7 +150,13 @@ const App = (function(ItemCtrl, UICtrl) {
   // Public methods
   return {
     init: function() {
-      console.log('Hello');
+      console.log('Initializing App');
+
+      // Fetch items from data structure
+      const items = ItemCtrl.getItems();
+
+      // Populate list with items
+      UICtrl.populateItemList(items);
     }
   }
   
