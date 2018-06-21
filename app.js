@@ -82,6 +82,11 @@
 
 // });
 
+
+
+
+
+
 // Refactoring for modular js
 
 // IIFE
@@ -99,19 +104,25 @@
 // Item Controller 
 const ItemCtrl = (function () {
 
-  //Reminder Constructor
+  // Reminder Constructor
   const Reminder = function( reminderTitle, reminderDate, reminderPriority, reminderText ) {
     this.reminderTitle = reminderTitle;
     this.reminderDate = reminderDate;
     this.reminderPriority = reminderPriority;
     this.reminderText = reminderText;
   }
+  
+  let reminderTitle = document.getElementById('textarea1').value,
+      reminderDate = document.getElementById('date').value,
+      reminderPriority = document.getElementById('priority').value,
+      reminderText = document.getElementById('textarea2').value;
 
+  // Reminder data
   const data = {
-    reminderTitle: 'Pav',
-    reminderDate: '06-04-82',
-    reminderPriority: 'p1',
-    reminderText: 'text goes here'
+    reminderTitle: reminderTitle,
+    reminderDate: reminderDate,
+    reminderPriority: reminderPriority,
+    reminderText: reminderText
   }
 
   return {
@@ -120,18 +131,48 @@ const ItemCtrl = (function () {
     }
   }
 
-
 })();
 
 // UI Controller
 const UICtrl = (function () {
+
+  let itemHolder = document.getElementById('item-holder'),
+      itemCard = document.createElement('div'),
+      title = document.createElement('h5'),
+      text = document.createElement('p'),
+      date = document.createElement('p'),
+      close = document.createElement('i'),
+      edit = document.createElement('i'),
+      priority = document.createElement('i');
+
+  itemCard.className = 'item card-item';    
+  itemHolder.appendChild(itemCard);
+
+  itemCard.appendChild(title);
+  title.innerHTML = 'Title'; // reminderTitle
+
+  itemCard.appendChild(close);
+  close.className = 'far fa-times-circle fa-sm close';
+  
+  return {
+    createHolder: function () {
+      return itemHolder;
+    },
+    createCard: function () {
+      return itemCard;
+    }   
+  }
   
 })();
 
 // App Controller
 const App = (function( ItemCtrl, UICtrl ) {
 
-  console.log(ItemCtrl.logData());
+  console.log( ItemCtrl.logData() );
+
+  console.log( UICtrl.createHolder() );
+
+
 
 })( ItemCtrl, UICtrl );
 
