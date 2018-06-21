@@ -26,6 +26,7 @@ document.getElementById('btn').addEventListener('click', function(e) {
       reminderText = document.getElementById('textarea2').value;
 
   // Getting all elements in item-holder
+  
   const itemHolder = document.getElementById('item-holder'),
         itemCard = document.createElement('div'),
         title = document.createElement('h5'),
