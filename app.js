@@ -96,73 +96,42 @@
 // })();
 
 
-// MODULE ONE ------
+// Item Controller 
+const ItemCtrl = (function () {
 
-const ItemCtrl = (function() {
-  function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
-    this.id = id;
+  //Reminder Constructor
+  const Reminder = function( reminderTitle, reminderDate, reminderPriority, reminderText ) {
     this.reminderTitle = reminderTitle;
     this.reminderDate = reminderDate;
     this.reminderPriority = reminderPriority;
     this.reminderText = reminderText;
   }
 
-  // Data structure / state
   const data = {
-    items: [
-      {id: 0, reminderTitle: 'This is a reminder title', reminderDate: '24-02-1982', reminderPriority: 'P1', reminderText: 'Some text for reminder.'},
-      {id: 1, reminderTitle: 'This is a reminder title2', reminderDate: '24-02-2017', reminderPriority: 'P2', reminderText: 'Some text for reminder.'},
-      {id: 2, reminderTitle: 'This is a reminder title3', reminderDate: '24-02-2000', reminderPriority: 'P3', reminderText: 'Some text for reminder.'}
-    ],
-    currentItem: null
+    reminderTitle: 'Pav',
+    reminderDate: '06-04-82',
+    reminderPriority: 'p1',
+    reminderText: 'text goes here'
   }
 
-  // Public methods
   return {
-    getItems: function() {
-      return data.items;
-    },
-    logData: function() {
+    logData: function () {
       return data;
     }
   }
+
+
 })();
 
-
-// MODULE TWO ------
-
-
-const UICtrl = (function() {
-
-  // Public methods
-  return {
-    populateItemList: function(items) {
-
-    }
-  }
+// UI Controller
+const UICtrl = (function () {
+  
 })();
 
+// App Controller
+const App = (function( ItemCtrl, UICtrl ) {
 
-// MODULE THREE ------
+  console.log(ItemCtrl.logData());
 
+})( ItemCtrl, UICtrl );
 
-const App = (function(ItemCtrl, UICtrl) {
-  
-  // Public methods
-  return {
-    init: function() {
-      console.log('Initializing App');
-
-      // Fetch items from data structure
-      const items = ItemCtrl.getItems();
-
-      // Populate list with items
-      UICtrl.populateItemList(items);
-    }
-  }
-  
-})(ItemCtrl, UICtrl);
-
-// Initialize App
-
-App.init();
