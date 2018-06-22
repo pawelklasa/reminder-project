@@ -37,6 +37,7 @@ document.getElementById('btn').addEventListener('click', function(e) {
         priority = document.createElement('i');
 
   // Creating each item in a card
+  
   itemHolder.appendChild(itemCard);
   itemCard.className = 'item card-item';
 
