@@ -168,6 +168,14 @@ const UICtrl = (function () {
 // App Controller
 const App = (function( ItemCtrl, UICtrl ) {
 
+  // Set up init
+  return {
+    init: function () {
+      console.log('Initialising App...');
+    }
+  }
+
+
   console.log( ItemCtrl.logData() );
 
   console.log( UICtrl.createHolder() );
@@ -176,3 +184,6 @@ const App = (function( ItemCtrl, UICtrl ) {
 
 })( ItemCtrl, UICtrl );
 
+// Initialising
+
+App.init();
