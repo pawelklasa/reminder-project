@@ -169,6 +169,7 @@ const UICtrl = (function () {
 const App = (function( ItemCtrl, UICtrl ) {
 
   // Set up init
+  
   return {
     init: function () {
       console.log('Initialising App...');
