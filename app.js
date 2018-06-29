@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Reminder constructor
-
 function Reminder(reminderTitle, reminderDate, reminderPriority, reminderText) {
   this.reminderTitle = reminderTitle;
   this.reminderDate = reminderDate;
